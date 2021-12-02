@@ -19,23 +19,7 @@
 
   &__title {
     max-width: 770px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 110%;
-    text-align: center;
     margin-bottom: 30px;
-    br {
-      @media (max-width: $md3+px) {
-        display: none;
-      }
-    }
-    span {
-      color: $accentSecondary;
-    }
-    @media (max-width: $md3+px) {
-      font-size: 30px;
-      line-height: 120%;
-    }
   }
 
   &__text {

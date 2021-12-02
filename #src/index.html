@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('_head.html',{
-"title":"Главная"
-})
+  @@include('_head.html',{ "title":"Главная" })
 
-<body>
-  <div class="wrapper">
-    @@include('_header.html',{})
-    <main class="page">
-      @@include('_intro.html',{})
-    </main>
-    @@include('_footer.html',{})
-  </div>
-  @@include('_popup.html',{})
-  @@include('_js.html',{})
-</body>
-
+  <body>
+    <div class="wrapper">
+      @@include('_header.html',{})
+      <main class="page">
+        @@include('_intro.html',{}) 
+        @@include('_cooperation.html',{})
+      </main>
+      @@include('_footer.html',{})
+    </div>
+    @@include('_popup.html',{}) @@include('_js.html',{})
+  </body>
 </html>
