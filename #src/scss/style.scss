@@ -93,6 +93,7 @@ body {
 @import "cooperation";
 @import "about";
 @import "guarantee";
+@import "interface";
 @import "footer";
 @import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -116,6 +117,11 @@ body {
   &_green {
     span {
       color: $accentGreen;
+    }
+  }
+  &_blue {
+    span {
+      color: $accentMain;
     }
   }
   br {
