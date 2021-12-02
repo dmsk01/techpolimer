@@ -21,6 +21,7 @@
 
   &__title {
     @include adaptiv-value("margin-bottom", 50, 30, 1);
+    text-align: center;
   }
 
   &__button {
