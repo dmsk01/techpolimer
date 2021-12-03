@@ -1,7 +1,6 @@
 .community {
   &__container {
     @include adaptiv-value("padding-top", 100, 50, 1);
-    @include adaptiv-value("padding-bottom", 100, 50, 1);
     max-width: 1170px;
     margin: 0 auto;
     width: 100%;
@@ -25,7 +24,7 @@
   &__column {
     &:first-child {
       flex: 0 1 50%;
-      border: 1px solid red;
+      align-self: flex-end;
       @include adaptiv-value("margin-right", 130, 0, 1);
       @media (max-width: $md2+px) {
         display: none;
@@ -33,6 +32,8 @@
     }
     &:last-child {
       flex: 0 1 470px;
+      @include adaptiv-value("padding-bottom", 100, 50, 1);
+
       & > *:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -40,6 +41,7 @@
   }
 
   &__image {
+    padding-bottom: 100%;
   }
 
   &__title {
