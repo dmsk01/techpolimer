@@ -1,0 +1,88 @@
+.project-release {
+  background-color: $backgroundDark;
+  &__container {
+    @include adaptiv-value("padding-top", 100, 50, 1);
+    @include adaptiv-value("padding-bottom", 100, 50, 1);
+    max-width: 1170px;
+    margin: 0 auto;
+    @media (max-width: $md1+px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    @include adaptiv-value("margin-bottom", 60, 30, 1);
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 -15px 30px;
+    @media (max-width: $md2+px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__column {
+    padding: 0 15px;
+    flex: 0 1 33.333%;
+  }
+
+  &__info {
+    max-width: 768px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+    @include adaptiv-value("margin-bottom", 60, 30, 1);
+    span {
+      &:first-child {
+        color: #8b8b8b;
+      }
+      &:last-child {
+        color: $accentMain;
+      }
+    }
+    @media (max-width: $md3+px) {
+      font-size: 20px;
+      line-height: 130%;
+    }
+  }
+
+  &__button {
+    text-align: center;
+  }
+}
+
+.item-proj {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__image {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 20px;
+    line-height: 130%;
+    @media (max-width: $md1+px) {
+      font-size: 18px;
+      line-height: 140%;
+    }
+    @media (max-width: $md2+px) {
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: $md3+px) {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}
