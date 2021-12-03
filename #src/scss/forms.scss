@@ -34,6 +34,19 @@
     border: 1px solid #dcdcdc;
     background-color: transparent;
   }
+  &_arrow {
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url("../img/icons/arrow-prev.svg") center no-repeat;
+      transform: rotate(-180deg);
+      margin-left: 5px;
+    }
+  }
   @media (any-hover: hover) {
     &:hover {
     }
