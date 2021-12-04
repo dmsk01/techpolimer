@@ -1,0 +1,100 @@
+.counts {
+  background-color: $backgroundDark;
+  &__container {
+    @include adaptiv-value("padding-top", 100, 50, 1);
+    @include adaptiv-value("padding-bottom", 100, 50, 1);
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    @media (max-width: $md1+px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media (max-width: $md3+px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  &__tabs-block {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__title {
+    @include adaptiv-value("margin-bottom", 40, 20, 1);
+  }
+}
+.tabs-block {
+  &__column {
+    &:first-child {
+      flex: 0 0 calc(326 / 1430 * 100%);
+      @include adaptiv-value("margin-right", 60, 0, 1);
+    }
+    &:last-child {
+      flex: 1 1 auto;
+    }
+  }
+  &__nav {
+  }
+  &__item {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #dcdcdc;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    &._active {
+      color: #ffffff;
+      padding-left: 8px;
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background-color: $accentMain;
+      }
+    }
+  }
+  &__body {
+    padding: 30px;
+    background-color: #ffffff;
+    color: #5b5b5b;
+    border-radius: 5px;
+  }
+  &__block {
+  }
+}
+
+.block-tab {
+  
+  p {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    &_small-gutter {
+      margin-bottom: 5px;
+    }
+  }
+  &__list {
+    margin-bottom: 20px;
+  }
+  &__button {
+    margin-bottom: 20px;
+  }
+}

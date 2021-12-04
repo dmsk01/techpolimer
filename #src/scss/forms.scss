@@ -47,6 +47,32 @@
       margin-left: 5px;
     }
   }
+  &_plus {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url("../img/icons/plus.svg") center no-repeat;
+      margin-right: 5px;
+    }
+  }
+  &_file {
+    display: flex;
+    align-items: center;
+    background-color: #ebebeb;
+    color: #1a1a1a;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url("../img/icons/pdf_icon.svg") center no-repeat;
+      margin-right: 5px;
+    }
+  }
   @media (any-hover: hover) {
     &:hover {
     }
