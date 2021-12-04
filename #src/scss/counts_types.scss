@@ -18,6 +18,9 @@
   &__tabs-block {
     display: flex;
     align-items: flex-start;
+    @media (max-width: $md2+px) {
+      flex-direction: column;
+    }
   }
   &__title {
     @include adaptiv-value("margin-bottom", 40, 20, 1);
@@ -25,15 +28,31 @@
 }
 .tabs-block {
   &__column {
+    width: 100%;
     &:first-child {
-      flex: 0 0 calc(326 / 1430 * 100%);
+      flex: 0 0 326px;
       @include adaptiv-value("margin-right", 60, 0, 1);
+      @media (max-width: $md2+px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+        flex: 1 1 100%;
+      }
     }
     &:last-child {
       flex: 1 1 auto;
     }
   }
   &__nav {
+    @media (max-width: $md2+px) {
+      display: none;
+    }
+  }
+  &__select {
+    width: 100%;
+    display: none;
+    @media (max-width: $md2+px) {
+      display: block;
+    }
   }
   &__item {
     font-size: 16px;
@@ -63,13 +82,15 @@
     background-color: #ffffff;
     color: #5b5b5b;
     border-radius: 5px;
+    @media (max-width: $md2+px) {
+      padding: 20px;
+    }
   }
   &__block {
   }
 }
 
 .block-tab {
-  
   p {
     font-size: 16px;
     line-height: 22.4px;
@@ -87,6 +108,11 @@
     line-height: 22.4px;
     margin-bottom: 30px;
     font-weight: 700;
+    color: #1a1a1a;
+
+    @media (max-width: $md3+px) {
+      margin-bottom: 5px;
+    }
     &_small-gutter {
       margin-bottom: 5px;
     }
