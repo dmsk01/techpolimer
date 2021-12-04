@@ -191,6 +191,9 @@ const tabClick = (container, itemClass) => {
           tabs_blocks[index].classList.remove("_active");
           activeIndex = index;
         }
+        const select = document.querySelector(".select__title .select__value span");
+        select.innerText = tabs_item.innerText;
+        
         tabs_item.classList.add("_active");
         tabs_blocks[index].classList.add("_active");
         e.preventDefault();
