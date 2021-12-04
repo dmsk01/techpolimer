@@ -24,11 +24,22 @@
   line-height: 140%;
   color: $mainColor;
   border-radius: 5px;
+  transition: all 0.3s ease 0s;
   &_accent-main {
     background-color: $accentMain;
+    @media (min-width: 768px) {
+      &:hover {
+        background-color: #0082ba;
+      }
+    }
   }
   &_accent-secondary {
     background-color: $accentSecondary;
+    @media (min-width: 768px) {
+      &:hover {
+        background-color: #dd5000;
+      }
+    }
   }
   &_transparent {
     border: 1px solid #dcdcdc;
@@ -72,6 +83,19 @@
       background: url("../img/icons/pdf_icon.svg") center no-repeat;
       margin-right: 5px;
     }
+    @media (min-width: 768px) {
+      &:hover {
+        color: #0082ba;
+      }
+    }
+  }
+  &:focus {
+    // outline: 2px solid #1a1a1a;
+  }
+  &:disabled {
+    background-color: #8b8b8b;
+    color: #dcdcdc;
+    cursor: unset;
   }
   @media (any-hover: hover) {
     &:hover {
