@@ -1,6 +1,6 @@
 .cooperation {
   @include adaptiv-value("padding-top", 100, 50, 1);
-  @include adaptiv-value("padding-bottom", 70, 20, 1);
+  @include adaptiv-value("padding-bottom", 100, 50, 1);
   padding-left: 130px;
   padding-right: 130px;
   display: flex;
@@ -90,6 +90,8 @@
     margin-bottom: 35px;
     @media (max-width: $md4+px) {
       margin-bottom: 5px;
+      font-size: 30px;
+      line-height: 120%;
     }
   }
 
@@ -100,6 +102,8 @@
     margin-bottom: 10px;
     @media (max-width: $md4+px) {
       margin-bottom: 5px;
+      font-size: 20px;
+      line-height: 130%;
     }
   }
 
@@ -107,5 +111,8 @@
     font-size: 18px;
     line-height: 140%;
     color: $monochromeGrey;
+    @media (max-width: $md4+px) {
+      font-size: 16px;
+    }
   }
 }

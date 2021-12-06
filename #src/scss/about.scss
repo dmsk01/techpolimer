@@ -1,17 +1,11 @@
 .about {
   @include adaptiv-value("padding-top", 100, 50, 1);
   @include adaptiv-value("padding-bottom", 70, 50, 1);
-  padding-left: 130px;
-  padding-right: 130px;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
-  @media (max-width: $md1+px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  @media (max-width: $md3+px) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   &__title {
     margin-bottom: 30px;
     @media (max-width: $md3+px) {
