@@ -147,8 +147,8 @@
   &__value {
     display: flex;
     font-size: 16px;
-    height: 30px;
-    padding: 0px 20px;
+    height: 40px;
+    padding: 5px 20px;
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -195,7 +195,7 @@
   // .select__option
   &__option {
     cursor: pointer;
-    padding: 5px 15px 5px 20px;
+    padding: 10px 15px 10px 20px;
     margin: 0px 0px 0px 0px;
     @media (min-width: 992px) {
       &:hover {
