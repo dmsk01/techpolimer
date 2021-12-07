@@ -113,7 +113,6 @@
   }
 
   &__link {
-    text-transform: uppercase;
     color: #dcdcdc;
     font-weight: 700;
     font-size: 16px;
@@ -157,11 +156,17 @@
       justify-content: center;
       align-items: center;
     }
+    @media (max-width: 520px) {
+      padding: 0 10px;
+    }
   }
 
   &__btn {
     &:first-child {
       margin-right: 10px;
+      @media (max-width: 520px) {
+        flex: 1 1 auto;
+      }
     }
   }
 }

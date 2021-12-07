@@ -257,6 +257,7 @@ body.ie {
 .swiper-pagination-bullet-active {
   &::before {
     background-color: $accentMain;
+    border-color: transparent;
   }
 }
 //====================================================================================================

@@ -99,6 +99,11 @@
     line-height: 22.4px;
     margin-bottom: 20px;
   }
+  @media (max-width: $md3+px) {
+    p:not(:first-of-type) {
+      display: none;
+    }
+  }
   &__title {
     font-size: 20px;
     line-height: 26px;
@@ -109,7 +114,7 @@
   &__subtitle {
     font-size: 16px;
     line-height: 22.4px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-weight: 700;
     color: #1a1a1a;
 
