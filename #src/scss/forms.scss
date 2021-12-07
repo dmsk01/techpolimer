@@ -177,6 +177,18 @@
       margin-left: 5px;
       background: url("../img/icons/select_arrow.svg") center / 100% no-repeat;
     }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 3px;
+      height: 50%;
+      background-color: $accentMain;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translate(0, -50%);
+      z-index: 1;
+    }
   }
   &__input {
     width: 100%;
